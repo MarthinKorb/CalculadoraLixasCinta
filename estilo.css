@@ -1,0 +1,144 @@
+.container{
+    background-color: snow;
+    margin-bottom: auto;
+    height: auto;
+}
+
+.jumbotron{
+    background-color: steelblue;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 0px white;
+    border-radius: 10px;
+}
+
+#jumbo2{
+    background-color: beige;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    
+}
+
+h2{
+    padding-left: 50px;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px white;
+}
+
+h5{
+    font-size: 19px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+#botao{
+    background-color: steelblue;
+    color: white;
+    margin: 10px;
+    margin::100px;
+}
+
+#botao:hover{
+    background-color: orange;
+    color: black;
+    transition: .4s;
+}
+
+#div_botoes{
+    margin-left: 55px;
+    width: 1175px;
+    background-color: snow;
+}
+
+#total_lixas{
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    
+.container{
+  margin-left: 15px;
+  width: auto;
+    height: auto;
+  background-color: snow;
+  padding-bottom: 0px;
+}
+
+.jumbotron{
+  width: auto;
+  background-color: steelblue;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 1px black;
+  border-radius: 10px;
+}
+
+#jumbo2{
+    margin: 5px;
+    background-color: beige; 
+    margin-top: 15px;
+    border-radius: 40px;
+}
+    
+#jumbo3{
+        margin: 5px;
+        margin-top: -40px;
+    }
+
+h2{
+    padding-left: 37px;
+    padding-bottom: 2px;
+    font-size: 35px;
+    text-shadow: 1px 1px 1px white;
+}
+
+h5{
+    font-size: 33px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+    
+#div_botoes{
+    margin-left: 55px;
+    width: auto;
+    background-color: white;
+}
+
+
+#botao{
+    font-size: 30px;
+    min-width: 250px;
+    width: auto;
+    margin-right: 350px;
+    background-color: steelblue;
+    color: white;
+    margin-top: 10px;
+}
+
+#botao:hover{
+    background-color: orange;
+    color: black;
+    transition: .4s;
+}
+
+#total_lixas{
+    margin-bottom: 20px;
+} 
+
+.form-control{
+    height: 60px;
+    font-size: 30px;
+}
+
+    
+}

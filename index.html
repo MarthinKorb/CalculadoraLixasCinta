@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+        
+       <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  -->
+        
+		<meta charset="UTF-8">
+        
+        <link rel="icon"  href="./Fati.ico">
+            
+		<title>Calculadora para Lixas Cintas</title>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="estilo.css">
+
+		<script type="text/javascript" src="prog.js">
+                
+		</script>
+	</head>
+
+	<body>
+		
+		<div class="container">            
+            
+			<div class="jumbotron">
+				<h2>CALCULADORA PARA LIXAS CINTAS</h2>
+			</div>
+
+			<hr />
+
+			
+        <div class="row" id="jumbo3" style="padding-top: 30px">                
+                
+			<div class="col-md-3" class="col-sm-6">
+                <h5>Comprimento da Lixa</h5>
+				<input id="comprimento" type="number" class="form-control" placeholder="Informe o comprimento em milímetros" data-toggle="popover" title="Informe o comprimento da lixa em milímetros."/>
+			</div> 
+            
+              
+            <div class="col-md-3" class="col-sm-6">
+                <h5>Largura da Lixa</h5>
+				<input id="largura" type="number" class="form-control" placeholder="Informe a largura em milímetros" data-toggle="popover" title="Informe a largura da lixa em milímetros."/>
+			</div> 
+                  
+            <div class="col-md-3" class="col-xs-4">
+                <h5>Preço do metro(rolo 300mm)</h5>
+				<input id="preco" type="number" class="form-control" placeholder="Informe o preço do metro" data-toggle="popover" title="Informe o preço do metro da lixa"/>
+            </div>    
+                
+             <div class="col-md-3" class="col-sm-4">
+                 <h5>Desconto em "%"</h5>
+				<input id="desconto" type="text" class="form-control" placeholder="Informe a porcentagem de desconto" data-toggle="popover" title="Informe a porcentagem de desconto."/>
+            </div>
+                
+        </div>
+                        
+        <div class="row" id="jumbo2">   
+                
+             <div class="col-md-3" class="col-sm-4">
+                  <h5 style="padding-top: 30px; ">Pedido mínimo</h5>
+			      <input id="ped_minimo" type="text" class="form-control" readonly data-toggle="popover" title="Campo que contém a informação da quantidade de peças mínimas para o pedido."/>
+             </div>
+                
+             <div class="col-md-3" class="col-sm-4">
+                 <h5 style="padding-top: 30px;">Preço Unitário</h5>
+				 <input id="preco_unit" type="text" class="form-control" readonly/ data-toggle="popover" title="Preço unitário da lixa.">	
+             </div> 
+                                
+             <div class="col-md-3" class="col-sm-4">
+                <h5 style="padding-top: 30px;">Valor com desconto</h5>
+				<input id="valor_desconto" type="text" class="form-control" readonly/ data-toggle="popover" title="Valor das lixas com desconto.">			
+             </div>
+                
+             <div class="col-md-3" class="col-sm-4">
+                <h5 style="padding-top: 30px;">Valor total</h5> 
+                <input id="total_lixas" type="text" class="form-control" readonly/ data-toggle="popover" title="Valor total das lixas.">
+             </div>  
+            
+            
+               <div class="row" style="padding-top: 20px">
+                
+                <div class="col-md-3" ></div>
+                
+			
+			</div>
+            
+            
+				<!--<div class="col-md-4">
+					<select id="operacao" class="form-control">
+						<option value="">--Selecione uma operação</option>
+						<option value="1">Subtração</option>
+						<option value="2">Adição</option>
+						<option value="3">Multiplicação</option>
+						<option value="4">Divisão</option>
+					</select>
+				</div>-->
+             
+        </div>
+            <hr />
+			
+		</div>
+        <div class="row" id="div_botoes">
+            <div class="col-md-2" class="col-sm-2"></div>
+            <div class="col-md-1" class="col-sm-2"></div>
+            
+         	    <div class="col-md-2" class="col-sm-3">
+					<button id="botao" type="button" class="btn btn-lg btn-primary pull-right" onclick="calcular() + TestarCampos()">Calcular</button>
+				</div>
+                
+                <div class="col-md-1"></div>
+                
+                <div class="col-md-2" class="col-sm-3">
+					<button id="botao" type="button" class="btn btn-lg btn-primary pull-right" onclick="Limpar()"  data-toggle="popover" title="Limpar todos os campos">Limpar</button>
+				</div>  
+        </div>
+	</body>
+</html>
